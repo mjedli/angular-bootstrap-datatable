@@ -11,7 +11,7 @@ export class AppComponent  {
   
 constructor(public appService : AppService) { }
 
-  title = "test";
+  title = "Angular - DataTable";
   name = 'Angular ' + VERSION.major;
 
   myComponent:MyComponent[];
