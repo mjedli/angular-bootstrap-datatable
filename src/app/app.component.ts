@@ -11,6 +11,7 @@ export class AppComponent  {
   
 constructor(public appService : AppService) { }
 
+  title = "test";
   name = 'Angular ' + VERSION.major;
 
   myComponent:MyComponent[];
