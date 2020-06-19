@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { AppService } from './app.service';
 import { MyComponent } from './my.component';
 
 @Component({
@@ -8,15 +9,14 @@ import { MyComponent } from './my.component';
 })
 export class AppComponent  {
   
+constructor(public appService : AppService) { }
+
   name = 'Angular ' + VERSION.major;
 
-  myComponent  : MyComponent[] = [
-    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
-    {name : "Bradley", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "Paris", salary: "$1,200,000"},
-    {name : "Brielle", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "Tokyo", salary: "$1,200,000"},
-    {name : "Bruno", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "San Francisco", salary: "$1,200,000"},
-    {name : "Caesar", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "New York", salary: "$1,200,000"},
-  ];
+  myComponent:MyComponent[];
 
+  ngOnInit() {
+    this.myComponent = this.appService.getAllComponent();
+  }
 
 }
