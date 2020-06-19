@@ -10,12 +10,9 @@ export class AppComponent  {
   
   name = 'Angular ' + VERSION.major;
 
-  list  : MyComponent[] = [
+  myComponent  : MyComponent[] = [
     {name : 1, position : "title 3", office : "address 1", startDate : true, salary: "salary"},
   ];
-
-
-  myComponent:MyComponent[];
 
 
 }
