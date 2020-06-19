@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { MyComponent } from 'my.component';
+import { MyComponent } from './my.component';
 
 @Component({
   selector: 'my-app',
@@ -11,7 +11,12 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
   myComponent  : MyComponent[] = [
-    {name : 1, position : "title 3", office : "address 1", startDate : true, salary: "salary"},
+    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
+    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
+        {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
+    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
+    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
+    {name : "Angelica", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "London", salary: "$1,200,000"},
   ];
 
 

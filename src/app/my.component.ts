@@ -3,5 +3,5 @@ export class MyComponent {
   position:String;
   office:String;
   startDate:String;
-  salary:number
+  salary:String
 }
