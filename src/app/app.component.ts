@@ -12,11 +12,15 @@ export class AppComponent  {
 constructor(public appService : AppService) { }
 
   title = "Angular - DataTable";
-  name = 'Angular ' + VERSION.major;
+  copyright:String = "Copyright ";
 
+  name = 'Angular ' + VERSION.major;
+  
   myComponent:MyComponent[];
 
   ngOnInit() {
+    var currentDate = new Date();
+    this.copyright = this.copyright + currentDate.getFullYear().toString();
     this.myComponent = this.appService.getAllComponent();
   }
 
