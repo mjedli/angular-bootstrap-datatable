@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { MyComponent } from 'my.component';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,15 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  
   name = 'Angular ' + VERSION.major;
+
+  list  : MyComponent[] = [
+    {name : 1, position : "title 3", office : "address 1", startDate : true, salary: "salary"},
+  ];
+
+
+  myComponent:MyComponent[];
+
+
 }
