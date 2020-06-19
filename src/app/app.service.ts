@@ -14,7 +14,7 @@ export class AppService {
     {name : "Caesar", position : "Ramos", office : "Chief Executive Officer (CEO)", startDate : "New York", salary: "$1,200,000"},
   ];
 
-    /*
+  /*
   * getAllComponent
   */
   public getAllComponent():MyComponent[] {
